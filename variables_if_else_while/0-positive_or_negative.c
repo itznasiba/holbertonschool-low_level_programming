@@ -4,8 +4,12 @@
 /**
  * main - Entry point
  *
- * Return - Always 0
+ * Description: Assigns a random number to n and prints
+ * whether it is positive, zero, or negative.
+ *
+ * Return: 0 on success
  */
+
 int main(void)
 {
 	int n;
