@@ -16,11 +16,11 @@ int main(void)
 		putchar(n);
 		n++;
 	}
-        while (a <= 'f')
-        {
-                putchar(a);
-                a++;
-        }
-        putchar('\n');
-        return (0);
+	while (a <= 'f')
+	{
+		putchar(a);
+		a++;
+	}
+	putchar('\n');
+	return (0);
 }
