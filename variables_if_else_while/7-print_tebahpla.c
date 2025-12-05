@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints all single digit numbers from 0 to 10
+ * main - prints alphabet in reverse in lowercase
  *
  * Return: 0 in success
  */
@@ -13,7 +13,7 @@ int main(void)
 	while (a >= 'a')
 	{
 		putchar(a);
-		a++;
+		a--;
 	}
 	putchar('\n');
 	return (0);
