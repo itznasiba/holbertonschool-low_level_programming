@@ -1,9 +1,15 @@
 #include <stdio.h>
 #include "main.h"
 
+/**
+ * print_numbers - print numbers from 0 to 9 followed by new line
+ *
+ * Return: void
+ */
+
 void print_numbers(void)
 {
-	char c ='0';
+	char c = '0';
 
 	while (c <= '9')
 	{
