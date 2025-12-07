@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints all the numbers from 1 to 100, but for multipliers of 3 Fizz, multipliers of 5 Buzz, multipliers of both 3 and 5 FizzBuzz
+ * main - prints all the numbers from 1 to 100
  *
  * Return: 0 in success
  */
