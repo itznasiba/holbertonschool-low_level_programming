@@ -6,5 +6,6 @@ void print_diagonal(int n);
 int _isdigit(int c);
 int _putchar(char c);
 int _isupper(int c);
+void print_numbers(void);
 
 #endif /*MAIN_H*/
