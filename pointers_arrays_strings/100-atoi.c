@@ -40,12 +40,12 @@ int _atoi(char *s)
 					return (-2147483648);
 			}
 
-			result = result * 10 + (*s - '0');
+			result = result * 10 + (*s - '0') * sign;
 		}
 		if (*s < '0' || *s > '9')
 			break;
 		s++;
 	}
 
-	return (sign * result);
+	return (result);
 }
