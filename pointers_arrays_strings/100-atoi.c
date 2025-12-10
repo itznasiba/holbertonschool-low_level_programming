@@ -10,6 +10,7 @@
 
 int _atoi(char *s)
 {
+	int digit;
 	int sign = 1;
 	int result = 0;
 
@@ -25,10 +26,25 @@ int _atoi(char *s)
 	while (*s != '\0')
 	{
 		if (*s >= '0' && *s <= '9')
+		{
+			digit = *s - '0';
+
+			if (sign == 1)
+			{
+				if (result > (2147483647 - digit) / 10)
+					return (2147483647);
+			}
+			else
+			{
+				if (result > (2147483648u - digit) / 10)
+					return (-2147483648);
+			}
+
 			result = result * 10 + (*s - '0');
-		s++;
+		}
 		if (*s < '0' || *s > '9')
 			break;
+		s++;
 	}
 
 	return (sign * result);
