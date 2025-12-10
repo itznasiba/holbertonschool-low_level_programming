@@ -17,11 +17,17 @@ int _atoi(char *s)
 	{
 		if (*s == '-')
 			sign = sign * (-1);
-		if (*s <= '0' && *s >= '9')
-			break
+		if (*s >= '0' && *s <= '9')
+			break;
+		s++;
 	}
 
 	while (*s != '\0')
 	{
-		if (*s <= '9' && *s >= '0'){
-		
+		if (*s >= '0' && *s <= '9')
+			result = result * 10 + (*s - '0');
+		s++;
+	}
+
+	return (sign * result);
+}
