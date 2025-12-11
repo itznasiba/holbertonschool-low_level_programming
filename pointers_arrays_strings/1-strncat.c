@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * strncat - concatenates two strings
+ * _strncat - concatenates two strings
  * @dest: the first string 
  * @src: the second string
  *
