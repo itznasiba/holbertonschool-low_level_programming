@@ -8,7 +8,7 @@
  * Return: char
  */
 
-char *leet(char *)
+char *leet(char *str)
 {
 	int i = 0;
 
@@ -22,4 +22,9 @@ char *leet(char *)
 			str[i] = '0';
 		if (str[i] == 't' || str[i] == 'T')
 			str[i] = '7';
-		if (str[i] ==
+		if (str[i] == 'l' || str[i] == 'L')
+			str[i] = '1';
+		i++;
+	}
+	return (str);
+}
