@@ -12,7 +12,7 @@ int main(void)
 		return (1);
 
 	for (i = 0; i < 5; i++)
-		printf("%d ", arr[i]); // Output: 0 0 0 0 0
+		printf("%d ", arr[i]);
 	printf("\n");
 
 	free(arr);
