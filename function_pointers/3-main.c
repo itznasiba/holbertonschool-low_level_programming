@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "3-calc.h"
 
-int main(void)
+int main(int argc, char *argcv[])
 {
 	int a;
 	int b;
