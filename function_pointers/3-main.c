@@ -16,7 +16,7 @@ int main(int argc, char *argcv[])
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 
-	op_funct = get_op_fuunc(argv[2]);
+	op_funct = get_op_func(argv[2]);
 	if (op_funct == NULL)
 	{
 		printf("Error\n");
