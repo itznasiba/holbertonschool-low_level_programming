@@ -5,7 +5,7 @@
 
 /**
  * get_op_func - chooses which function to call
- * @s: input 
+ * @s: input
  *
  * Return: int
  */
@@ -25,10 +25,10 @@ int (*get_op_func(char *s))(int, int)
 
 	while (i < 5)
 	{
-		if (strcmp(ops[i].op,s) == 0)
+		if (strcmp(ops[i].op, s) == 0)
 			return (ops[i].f);
 		i++;
 	}
 
-	return NULL;
+	return (NULL);
 }

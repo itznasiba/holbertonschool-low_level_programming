@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include "3-calc.h"
 
+/**
+ * main - calculates operations
+ *
+ * Return: int
+ */
+
 int main(int argc, char *argv[])
 {
 	int a;
@@ -31,7 +37,7 @@ int main(int argc, char *argv[])
 		return (100);
 	}
 
-	result = op_funct(a,b);
-	printf("%d\n",result);
+	result = op_funct(a, b);
+	printf("%d\n", result);
 	return (0);
 }
