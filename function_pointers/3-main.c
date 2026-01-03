@@ -6,6 +6,7 @@ int main(int argc, char *argcv[])
 {
 	int a;
 	int b;
+	int (*op_func)(int, int);
 
 	if (argc != 4)
 	{
