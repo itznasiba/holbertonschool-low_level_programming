@@ -4,6 +4,8 @@
 
 /**
  * main - calculates operations
+ * argv - argument variable
+ * argc - argument count
  *
  * Return: int
  */
