@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "3-calc.h"
+
+int main(void)
+{
+	int a;
+	int b;
+
+	if (argc != 4)
+	{
+		printf("Error\n");
+		return (98);
+	}
+
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+
+	op_funct = get_op_fuunc(argv[2]);
+	if (op_funct == NULL)
+	{
+		printf("Error\n");
+		return (98);
+	}
+	if (argv[2][0] == '/' || argv[2][0] == '%' && b == 0)
+	{
+		printf("Error\n");
+		return (98);
+	}
+
+	result = op_func(a,b);
+	printf("%d\n",result);
+	return (0);
+}
