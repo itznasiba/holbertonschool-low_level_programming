@@ -19,14 +19,8 @@ int main(int argc, char *argv[])
 	b = atoi(argv[3]);
 
 	op_funct = get_op_func(argv[2]);
-	
-	if (argv[2][1] != '\0')
-	{
-		printf ("Error\n");
-		return (99);
-	}
 
-	if (op_funct == NULL)
+	if (op_funct == NULL || argv[2][0] != '\0')
 	{
 		printf("Error\n");
 		return (99);
