@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 	if ((argv[2][0] == '/' || argv[2][0] == '%') && b == 0)
 	{
 		printf("Error\n");
-		return (98);
+		return (100);
 	}
 
 	result = op_funct(a,b);
