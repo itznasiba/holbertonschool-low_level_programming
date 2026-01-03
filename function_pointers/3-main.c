@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 		return (98);
 	}
 
-	result = op_func(a,b);
+	result = op_funct(a,b);
 	printf("%d\n",result);
 	return (0);
 }
