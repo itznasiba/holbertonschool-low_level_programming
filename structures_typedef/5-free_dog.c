@@ -4,7 +4,7 @@
 
 /**
  * free_dog - frees a struct dog_t
- * @d - the name of the struct to free
+ * @d: the name of the struct to free
  *
  * Return: void
  */
