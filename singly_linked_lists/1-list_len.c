@@ -4,7 +4,6 @@
 /**
  * list_len - returns the length of the linked list
  * @h: a pointer to the first element of the list
- * @count: number of nodes
  *
  * Return: int
  */
