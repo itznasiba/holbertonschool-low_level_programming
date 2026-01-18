@@ -4,8 +4,8 @@
 #include "lists.h"
 
 /**
- * sum_dlistint - sums all the elements of list
- * @head: a pointer to the head of list
+ * sum_dlistint - sums the elements of list
+ * @head: a pointer to the head of the list
  * 
  * Return: int
  */
