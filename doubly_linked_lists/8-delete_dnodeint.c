@@ -26,7 +26,7 @@
 	if (index == 0)
 	{
 		*head = temp->next;
-		if (temp->next == NULL)
+		if (temp->next != NULL)
 		{
 			temp->next->prev = NULL;
 		}
