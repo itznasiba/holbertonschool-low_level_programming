@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * add_dnodeint_end - adds a new node to the beginning
+ * add_dnodeint_end - adds a new node to the end
  * @head: a pointer to the head of the list
  * @n: int
  *
@@ -32,6 +32,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		new->prev = NULL;
 		new->next = NULL;
 		*head = new;
+		new->n = n;
 		return (new);
 	}
 
