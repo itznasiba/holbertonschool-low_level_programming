@@ -16,7 +16,7 @@
 	unsigned int i = 0;
 	dlistint_t *temp;
 
-	if (head == NULL)
+	if (head == NULL || *head == NULL)
 	{
 		return (-1);
 	}
@@ -34,7 +34,7 @@
 		return (1);
 	}
 
-	while (temp != NULL && i < index - 1)
+	while (temp != NULL && i < index)
 	{
 		temp = temp->next;
 		i++;
