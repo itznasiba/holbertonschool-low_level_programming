@@ -6,7 +6,7 @@
 /**
  * sum_dlistint - sums the elements of list
  * @head: a pointer to the head of the list
- * 
+ *
  * Return: int
  */
 
