@@ -3,6 +3,14 @@
 #include <fcntl.h>
 #include <unistd.h>
 
+/**
+ * open_source - opens the source file for reading
+ * @filename: name of the source file
+ *
+ * Return: file descriptor of the opened source file
+ * Exit: 98 if the file cannot be opened
+ */
+
 int open_source(char *filename)
 {
 	int fd = open(filename, O_RDONLY);
@@ -15,6 +23,14 @@ int open_source(char *filename)
 	return (fd);
 }
 
+/**
+ * open_dest - opens or creates the destination file for writing
+ * @filename: name of the destination file
+ *
+ * Return: file descriptor of the opened destination file
+ * Exit: 99 if the file cannot be created or opened for writing
+ */
+
 int open_dest(char *filename)
 {
 	int fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0664);
@@ -26,7 +42,15 @@ int open_dest(char *filename)
 	}
 	return (fd);
 }
-
+/**
+ * copy_content - copies content from source to destination file
+ * @fd_from: file descriptor of the source file
+ * @fd_to: file descriptor of the destination file
+ * @file_from: name of the source file (for error messages)
+ * @file_to: name of the destination file (for error messages)
+ *
+ * Exit: 98 if reading fails, 99 if writing fails
+ */
 void copy_content(int fd_from, int fd_to, char *file_from, char *file_to)
 {
 	ssize_t r, w;
@@ -52,6 +76,18 @@ void copy_content(int fd_from, int fd_to, char *file_from, char *file_to)
 		exit(98);
 	}
 }
+
+/**
+ * main - copies the content of one file to another
+ * @argc: number of command-line arguments
+ * @argv: array of command-line argument strings
+ *
+ * Return: 0 on success
+ * Exit: 97 if the argument count is wrong
+ *       98 if source file cannot be read
+ *       99 if destination file cannot be created/written
+ *       100 if file descriptor cannot be closed
+ */
 
 int main(int argc, char *argv[])
 {
