@@ -28,10 +28,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	while (temp)
 	{
-		if (strcmp(temp_key, key) == 0)
+		if (strcmp(temp->key, key) == 0)
 		{
 			free(temp->value);
-			temp->value = new->value;
+			temp->value = new_value;
 			return (1);
 		}
 		temp = temp->next;
@@ -42,7 +42,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		free(new_node);
 		return (0);
 	}
-	new_node->key = stdup(key);
+	new_node->key = striup(key);
 	if (new_node->key == NULL)
 	{
 		free(new_node);
